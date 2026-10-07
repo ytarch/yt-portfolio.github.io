@@ -1,5 +1,115 @@
 
 
-html,body{font-family:'DM Sans',sans-serif}
+html{font-family:'DM Sans',sans-serif}
 h1,h2,h3,h4,h5,h6{font-family:'PT Sans',sans-serif}
 
+
+body {color : rgb(255, 255, 255);
+     background-color: rgb(0, 0, 0);}
+
+h5 {color : rgb(197, 197, 197)}
+
+.contact_section {
+    box-sizing: border-box;
+    width: 300px;
+    color: white;
+    background-color: rgb(28, 27, 27);
+    border: 1px solid rgb(247, 243, 243);
+    border-radius: 16px;-webkit-box-shadow:0px 0px 18px 1px rgba(255,255,255,0.64);
+-moz-box-shadow: 0px 0px 18px 1px rgba(255,255,255,0.64);
+box-shadow: 0px 0px 18px 1px rgba(255,255,255,0.64);
+}
+.section {
+  box-sizing: border-box;
+  width: 500px;
+  min-height: 160px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(28, 27, 27);
+  border: 1px solid rgb(247, 243, 243);
+  border-radius: 16px;
+  transition: width 0.25s ease;
+  -webkit-box-shadow:0px 0px 18px 1px rgba(255,255,255,0.64);
+-moz-box-shadow: 0px 0px 18px 1px rgba(255,255,255,0.64);
+box-shadow: 0px 0px 18px 1px rgba(255,255,255,0.64);
+}
+
+h1 {font-size: 70;}
+.section[open] {
+  width: min(800px, calc(100% - 32px));
+}
+
+.section summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.section summary::-webkit-details-marker {
+  display: none;
+}
+
+.section summary h3 {
+  margin-top: 0;
+}
+
+.section summary::after {
+  content: "Voir plus";
+  display: block;
+  width: fit-content;
+  margin: 16px auto 0;
+  padding: 8px 16px;
+  color: white;
+  background-color: #444;
+  border: 1px solid #888;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.section summary:hover::after {
+  background-color: #666;
+}
+
+.section[open] summary::after {
+  content: "Voir moins";
+}
+
+.section summary:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.section-content {
+  margin-top: 16px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  background-color: #000000;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #fbf6f6;
+  color: rgb(0, 0, 0);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #808382;
+  color: white;
+}
